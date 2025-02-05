@@ -27,6 +27,7 @@ type PartnerParams struct {
 	JobType interface{} `json:"job_type"`
 }
 
+// ValidatePartnerParams validates the partner params like user_id, job_id and job_type
 func validateParams(partnerParams PartnerParams) error {
 
 	if (partnerParams == PartnerParams{}) {
